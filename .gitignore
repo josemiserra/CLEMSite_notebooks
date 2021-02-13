@@ -7,6 +7,8 @@ __pycache__/
 .ipynb_checkpoints
 
 data
+crops
+selected
 
 # temporary editor files that should not be in git
 *.orig
