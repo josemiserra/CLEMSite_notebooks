@@ -1,0 +1,81 @@
+{
+	"preferences": {
+		"terrain_detector": [{
+			"architecture": ".\\common\\grids\\MatTek\\terrain_detector\\terrain_model.json",
+			"weights": ".\\common\\grids\\MatTek\\terrain_detector\\terrain_model.weights.hdf5"
+		}],
+		"cross_detector": [{
+			"architecture": ".\\common\\grids\\MatTek\\cross_detector\\cross_model.json",
+			"weights": ".\\common\\grids\\MatTek\\cross_detector\\cross_model.weights.hdf5"
+		}],
+		"pattern_detector": [{
+			"architecture": ".\\common\\grids\\MatTek\\pattern_detector\\patterns_model.json",
+			"weights": ".\\common\\grids\\MatTek\\pattern_detector\\patterns_model.weights.hdf5"
+		}],
+		"last_port": "8098",
+		"last_ip_address": "127.0.0.1",
+		"last_ip_address_atlas": "127.0.0.1",
+		"scale": "micrometer",
+        "tolerance_to_closest_neighbor":"50.0",
+		"acquisition_parameters":[{
+			"black_threshold_active": 1,
+			"black_threshold":"90",
+			"tracking_stop_point_active":1,
+			"tracking_ASIFT_active":0,
+			"tracking_xcorr":0,
+			"section_thickness":"200",
+			"AFAS_period":"1800000"
+		}],
+		"line_detection": [{
+			"SEM": [{
+				"canny_thresh": "0.05",
+				"ignore_calibration": "0",
+				"stroke": "16",
+				"k": "12",
+				"clahe": "1",
+				"laplacian": "0",
+				"gaussian": "1.2"
+			}],
+			"LM": [{
+				"canny_thresh": "0.06",
+				"ignore_calibration": "0",
+				"stroke": "20",
+				"k": "12",
+				"clahe": "1",
+				"laplacian": "1",
+				"gaussian": "1.2"
+			}]
+		}],
+		"server_images": [{
+			"port_frames": "1382",
+			"address_frames": "127.0.0.1",
+			"python_folder": "C:\\Users\\Owner\\Anaconda3\\python.exe",
+			"use_local": "True",
+            "automaton_folder": "default",
+			"dir_frames_input": "G:\\Acquisitions\\29Nov19",
+			"dir_frames_output": "G:\\Acquisitions\\29Nov19"
+		}],
+		"grid": [{
+			"template_file":".\\common\\grids\\MatTek\\template.png",
+			"div1": "40",
+			"div2": "560",
+			"rotation": "0",
+			"blocksize":"50",
+			"spacing":"10",
+			"rows": "26",
+			"type": "MatTek",
+			"flip": 1,
+			"columns": "21",
+			"patterns_list":"'0A', '0B', '0C', '0D', '0E', '0F', '0G', '0H', '0I', '0J', '0K', '0L', '0M', '0N', '0O', '0P', '0Q', '0R', '0S', '0T', '0U', '0V', '0W', '0X', '0Y', '0Z', '1A', '1B', '1C', '1D', '1E', '1F', '1G', '1H', '1I', '1J', '1K', '1L', '1M', '1N', '1O', '1P', '1Q', '1R', '1S', '1T', '1U', '1V', '1W', '1X', '1Y', '1Z', '2A', '2B', '2C', '2D', '2E', '2F', '2G', '2H', '2I', '2J', '2K', '2L', '2M', '2N', '2O', '2P', '2Q', '2R', '2S', '2T', '2U', '2V', '2W', '2X', '2Y', '2Z', '3A', '3B', '3C', '3D', '3E', '3F', '3G', '3H', '3I', '3J', '3K', '3L', '3M', '3N', '3O', '3P', '3Q', '3R', '3S', '3T', '3U', '3V', '3W', '3X', '3Y', '3Z', '4A', '4B', '4C', '4D', '4E', '4F', '4G', '4H', '4I', '4J', '4K', '4L', '4M', '4N', '4O', '4P', '4Q', '4R', '4S', '4T', '4U', '4V', '4W', '4X', '4Y', '4Z', '5A', '5B', '5C', '5D', '5E', '5F', '5G', '5H', '5I', '5J', '5K', '5L', '5M', '5N', '5O', '5P', '5Q', '5R', '5S', '5T', '5U', '5V', '5W', '5X', '5Y', '5Z', '6A', '6B', '6C', '6D', '6E', '6F', '6G', '6H', '6I', '6J', '6K', '6L', '6M', '6N', '6O', '6P', '6Q', '6R', '6S', '6T', '6U', '6V', '6W', '6X', '6Y', '6Z', '7A', '7B', '7C', '7D', '7E', '7F', '7G', '7H', '7I', '7J', '7K', '7L', '7M', '7N', '7O', '7P', '7Q', '7R', '7S', '7T', '7U', '7V', '7W', '7X', '7Y', '7Z', '8A', '8B', '8C', '8D', '8E', '8F', '8G', '8H', '8I', '8J', '8K', '8L', '8M', '8N', '8O', '8P', '8Q', '8R', '8S', '8T', '8U', '8V', '8W', '8X', '8Y', '8Z', '9A', '9B', '9C', '9D', '9E', '9F', '9G', '9H', '9I', '9J', '9K', '9L', '9M', '9N', '9O', '9P', '9Q', '9R', '9S', '9T', '9U', '9V', '9W', '9X', '9Y', '9Z', 'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AX', 'AY', 'AZ', 'BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BK', 'BL', 'BM', 'BN', 'BO', 'BP', 'BQ', 'BR', 'BS', 'BT', 'BU', 'BV', 'BW', 'BX', 'BY', 'BZ', 'CA', 'CB', 'CC', 'CD', 'CE', 'CF', 'CG', 'CH', 'CI', 'CJ', 'CK', 'CL', 'CM', 'CN', 'CO', 'CP', 'CQ', 'CR', 'CS', 'CT', 'CU', 'CV', 'CW', 'CX', 'CY', 'CZ', 'DA', 'DB', 'DC', 'DD', 'DE', 'DF', 'DG', 'DH', 'DI', 'DJ', 'DK', 'DL', 'DM', 'DN', 'DO', 'DP', 'DQ', 'DR', 'DS', 'DT', 'DU', 'DV', 'DW', 'DX', 'DY', 'DZ', 'EA', 'EB', 'EC', 'ED', 'EE', 'EF', 'EG', 'EH', 'EI', 'EJ', 'EK', 'EL', 'EM', 'EN', 'EO', 'EP', 'EQ', 'ER', 'ES', 'ET', 'EU', 'EV', 'EW', 'EX', 'EY', 'EZ', 'FA', 'FB', 'FC', 'FD', 'FE', 'FF', 'FG', 'FH', 'FI', 'FJ', 'FK', 'FL', 'FM', 'FN', 'FO', 'FP', 'FQ', 'FR', 'FS', 'FT', 'FU', 'FV', 'FW', 'FX', 'FY', 'FZ', 'GA', 'GB', 'GC', 'GD', 'GE', 'GF', 'GG', 'GH', 'GI', 'GJ', 'GK', 'GL', 'GM', 'GN', 'GO', 'GP', 'GQ', 'GR', 'GS', 'GT', 'GU', 'GV', 'GW', 'GX', 'GY', 'GZ', 'HA', 'HB', 'HC', 'HD', 'HE', 'HF', 'HG', 'HH', 'HI', 'HJ', 'HK', 'HL', 'HM', 'HN', 'HO', 'HP', 'HQ', 'HR', 'HS', 'HT', 'HU', 'HV', 'HW', 'HX', 'HY', 'HZ', 'IA', 'IB', 'IC', 'ID', 'IE', 'IF', 'IG', 'IH', 'II', 'IJ', 'IK', 'IL', 'IM', 'IN', 'IO', 'IP', 'IQ', 'IR', 'IS', 'IT', 'IU', 'IV', 'IW', 'IX', 'IY', 'IZ', 'JA', 'JB', 'JC', 'JD', 'JE', 'JF', 'JG', 'JH', 'JI', 'JJ', 'JK', 'JL', 'JM', 'JN', 'JO', 'JP', 'JQ', 'JR', 'JS', 'JT', 'JU', 'JV', 'JW', 'JX', 'JY', 'JZ', 'KA', 'KB', 'KC', 'KD', 'KE', 'KF', 'KG', 'KH', 'KI', 'KJ', 'KK', 'KL', 'KM', 'KN', 'KO', 'KP', 'KQ', 'KR', 'KS', 'KT', 'KU', 'KV', 'KW', 'KX', 'KY', 'KZ'"
+		}],
+		"email_preferences":
+		[{
+		"user_address": "clemsitefibsem@gmail.com",
+        "recipients": "clemsitefibsem@gmail.com",
+        "smtp":"smtp.gmail.com",
+        "password" :"phoebe2SAM",
+        "username" :"clemsitefibsem",
+		"port":"587"
+		}]
+	}
+}
