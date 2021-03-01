@@ -189,7 +189,7 @@ class virtualGridMap(object):
 
     def getLandmarkIds(self):
         """
-            ACK
+            Return available ids
         """
         return list(self.map_df.LANDMARK);
 
