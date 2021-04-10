@@ -9,6 +9,7 @@ __pycache__/
 data
 crops
 selected
+extra_sw
 
 # temporary editor files that should not be in git
 *.orig
