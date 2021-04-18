@@ -27,9 +27,8 @@ If you need to reference any of the notebooks in your work, use the paper citati
 -  **5  correlation_strategy_LM-SEM_local**
     As continuation of the fourth notebook, a transform is applied now locally to a few landmarks. The purpose of this notebook is show a manual registration, and use it as a ground truth to compare it with the global results. 
 -  **6 feedback_light_microscopy_one_phenotype**
-    This notebook was used during feedback microscopy to select the cells of interest using t-SNE or by selection of one particular feature.
--  **7 feedback_light_microscopy_multiple_phenotypes**
-    This notebook was used during the feedback microscopy workflow (between the prescan map and the high resolution acquisition), to select the cells showing the interesting phenotypes for CLEM
+    These notebooks were used during the feedback microscopy workflow (between the prescan map and the high resolution acquisition), to select the cells showing the interesting phenotypes for CLEM.
+    The cells of interest are selected using t-SNE or by selection of one particular feature.
 
 
 ### Getting Started
@@ -40,22 +39,44 @@ If you need to reference any of the notebooks in your work, use the paper citati
    ```
 2. If you don't have Anaconda or Miniconda installed, go to [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and install Miniconda in your computer (miniconda is a lightweight version of the Anaconda python environment). 
 
-3. It is recommended that you install your own environment with Conda. Follow the instructions here: [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). After that, open an anaconda command prompt or a prompt, and activate your environment.
-  ```sh
-  activate your-environment
-  ```
+3. It is recommended that you install your own environment with Conda. Create a **python 3.7.7** environment. 
+    ``` sh
+   conda create -n clemsite_nb python=3.7.7
+    ```
+    Follow the instructions here: [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). After that, open an anaconda command prompt or a prompt, and activate your environment.
+    ```sh
+    activate clemsite_nb 
+    ```
 4. Move into the folder of the project and install the packages present in requirements.txt of the repository
    ```sh
-   pip install requirements.txt
+   pip install -r requirements.txt
    ```
+    If you experience problems when reading from requirements.txt, the installation of packages from scratch requires the following:
 
-6. Run jupyter notebook (More info in https://jupyter.org/).
+    ``` sh
+    conda install jupyter notebook
+    conda install tensorflow-gpu==1.15 # If no GPU = conda install tensorflow==1.15
+    conda install keras
+    conda install scikit-learn scikit-image
+    conda install opencv
+    conda install matplotlib seaborn
+    conda install tqdm
+    conda install pandas plotly
+    conda install bokeh==2.0.2
+    conda install holoviews==1.13.2
+    pip install bitarray
+    pip install imgaug
+    ```
+
+
+6. Inside your anaconda prompt, in the folder where you downloaded the repository, run jupyter notebook (More info in https://jupyter.org/).
    ```sh
    jupyter notebook
    ```
-   Go to each folder and run the `.ipynb`. You can then run the cells one by one and follow the execution flow. If you never used a jupyter notebook, you will find plenty of tutorials on internet, (e.g. https://realpython.com/jupyter-notebook-introduction/). 
+   Run the `.ipynb`. You can then execute the cells pressing one by one by simply follow the notebook. If you never used a jupyter notebook, you will find plenty of tutorials on internet, (e.g. https://realpython.com/jupyter-notebook-introduction/). 
 
 7. In some notebooks is necessary to download and extract some data, made available in Google Drive. In the notebook folder you will find a text file "download_data.txt". Download the data from the link, create a folder called __data__ and unzip it there. 
+
 
 
 ## License
