@@ -1,0 +1,6 @@
+Download and unzip the data to train from : 
+https://drive.google.com/file/d/1BQSDbH9CagTh-91u8w2qDDWuynC9lzxV/view?usp=sharing
+
+Change the name from data_nbX in the corresponding notebook (data_nb1 in 1_pattern_Recognition_LM_MatTek).
+Then change the folder name from "data_nb1" to "data".
+For data_nb6_xxx,put the "data" inside the xxx respective folder

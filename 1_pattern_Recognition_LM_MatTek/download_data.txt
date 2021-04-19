@@ -1,3 +1,0 @@
-Download and unzip the data to train from : 
-https://drive.google.com/file/d/12DfCzTuTVArZ35fwe32YV7uk1c66WuvN/view?usp=sharing
-data_not1.zip
