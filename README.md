@@ -26,7 +26,7 @@ If you need to reference any of the notebooks in your work, use the paper citati
     This notebook uses the map system to calculate a global affine transform between landmarks in LM and EM after doing a scan of the grid. 
 -  **5  correlation_strategy_LM-SEM_local**
     As continuation of the fourth notebook, a transform is applied now locally to a few landmarks. The purpose of this notebook is show a manual registration, and use it as a ground truth to compare it with the global results. 
--  **6 feedback_light_microscopy_one_phenotype**
+-  **6 feedback_light_microscopy**
     These notebooks were used during the feedback microscopy workflow (between the prescan map and the high resolution acquisition), to select the cells showing the interesting phenotypes for CLEM.
     The cells of interest are selected using t-SNE or by selection of one particular feature.
 
@@ -42,7 +42,7 @@ If you need to reference any of the notebooks in your work, use the paper citati
 3. It is recommended that you install your own environment with Conda. Create a **python 3.7.7** environment. 
     ``` sh
    conda create -n clemsite_nb python=3.7.7
-    ```
+   ```
     Follow the instructions here: [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). After that, open an anaconda command prompt or a prompt, and activate your environment.
     ```sh
     activate clemsite_nb 
@@ -89,5 +89,4 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 You can contact the author directly or create an issue request in https://github.com/josemiserra/CLEMSite_notebooks/issues
 
 Jose Miguel Serra Lleti - serrajosemi@gmail.com
-
 
